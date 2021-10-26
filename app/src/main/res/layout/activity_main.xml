@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <ImageView
+      android:id="@+id/image_car"
+      android:layout_width="52dp"
+      android:layout_height="52dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:layout_marginTop="32dp"
+      android:layout_marginStart="16dp">
+
+  </ImageView>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32dp"
+        android:text="HELLO THeRe,"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_car"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="55dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32dp"
+        android:text="WELCOME BACK"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <TextView
+        android:textColor="@color/graywhite"
+        android:id="@+id/helpper_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title2"
+        android:text="Sign in to cont"
+        android:layout_marginTop="42dp"
+        android:layout_marginStart="16dp"/>
+  <EditText
+      android:id="@+id/email"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintTop_toBottomOf="@id/helpper_text"
+      app:layout_constraintBottom_toTopOf="@+id/pasword"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginTop="8dp">
+
+  </EditText>
+  <EditText
+      android:id="@+id/pasword"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintBottom_toTopOf="@id/forgetpassword"
+      app:layout_constraintTop_toBottomOf="@id/email"
+      app:layout_constraintStart_toStartOf="parent"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginTop="16dp"
+      app:layout_constraintEnd_toEndOf="parent">
+  </EditText>
+  <TextView
+    android:id="@+id/forgetpassword"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/black"
+      android:text="FORGET PASSWORD?"
+    app:layout_constraintTop_toBottomOf="@id/pasword"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="32dp">
+  </TextView>
+  <Button
+      android:id="@+id/button_go"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@+id/forgetpassword"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="32dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+    android:text="GO">
+  </Button>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="NEW USER? SIGN UP"
+    app:layout_constraintTop_toBottomOf="@+id/button_go"
+    android:layout_marginTop="32dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+      android:textSize="24dp">
+  </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
